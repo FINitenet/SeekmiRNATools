@@ -46,10 +46,9 @@ def Long_to_Short(long_sequence_file, short_sequences_file):
 
         # 验证短序列是否为有效字符串
         peak1_valid = isinstance(peak1_seq, str) and len(peak1_seq) > 0
-            print(f"Warning: Both short sequences for {mir_id} in file {short_sequences_file} are empty or invalid, skipping processing. Context: MIR={mir_id}, Peak1={peak1_seq}, Peak2={peak2_seq}")
-        # 如果两个序列都无效，跳过
+        peak2_valid = isinstance(peak2_seq, str) and len(peak2_seq) > 0
         if not peak1_valid and not peak2_valid:
-            print(f"Warning: Both short sequences for {mir_id} in file {short_sequences_file} are empty or invalid, skipping processing")
+            print(f"Warning: Both short sequences for {mir_id} in file {short_sequences_file} are empty or invalid, skipping processing. Context: MIR={mir_id}, Peak1={peak1_seq}, Peak2={peak2_seq}")
             continue
 
         # 获取当前长序列

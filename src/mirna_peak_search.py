@@ -154,11 +154,11 @@ def compute_final_precision_for_mirna(mirna_dict, bam_file):
                 child_end = child_info['Child_end']
 
                 # 在子类的区域加上 ±2 范围
-                child_start_range = child_start - 2
-                child_end_range = child_end + 2
+                child_start_range = max(parent_start, child_start - 2)
+                child_end_range = min(parent_end, child_end + 2)
 
                 # 计算子类 ±2 范围内的 reads 数
-                child_reads_count = bam.count(region=None, start=child_start_range, end=child_end_range, contig=child_contig)
+                child_reads_count = bam.count(region=None, start=child_start_range, end=child_end_range, contig=parent_contig)
                 
                 # 累加子类范围内的 reads 数
                 child_total_reads += child_reads_count
@@ -168,7 +168,13 @@ def compute_final_precision_for_mirna(mirna_dict, bam_file):
                 precision = child_total_reads / parent_reads_count
             else:
                 precision = 0  # 如果父类区域没有 reads，则精度为 0
-
+            
+            # 检查精度是否大于 1
+            if precision > 1:
+                print(f"异常: Precision > 1\n"
+                    f"Parent: {parent_name}, Reads: {parent_reads_count}\n"
+                    f"Children Total Reads: {child_total_reads}")
+                
             # 将结果保存到 precision_data 列表
             precision_data.append({
                 "MIR": parent_name,
@@ -287,8 +293,7 @@ def calculate_peaks_and_rnafold(mirna_dict, bam_file):
                 if current_peak_start is None:
                     current_peak_start = pos
 
-                if i > 0 and pos > sorted_positions[i - 1] + 2:
-                    # 如果当前位置不在之前位置的±2nt范围内，记录上一个peak并开始新的peak
+                if i > 0 and pos > sorted_positions[i - 1] + 25:
                     peaks.append((current_peak_start, sorted_positions[i - 1], current_peak_count, current_peak_reads))
                     current_peak_start = pos
                     current_peak_count = 0

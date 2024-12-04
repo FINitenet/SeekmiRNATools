@@ -1,0 +1,34 @@
+2024-12-04 16:22:40,298 - INFO - Pipeline completed.
+2024-12-04 16:24:59,791 - INFO - Pipeline completed.
+2024-12-04 16:29:39,994 - INFO - None
+2024-12-04 16:29:39,994 - INFO - BAM file used: /home/chenyc/bioinfo/bios-store2/Cooperative_Project/Project_chensusu_240807N/R_0/merged.bam
+2024-12-04 16:29:39,994 - INFO - GFF file used: /home/chenyc/bioinfo/bios-store2/Cooperative_Project/Project_chensusu_240807N/res_loci_merge/converted.gff
+2024-12-04 16:29:40,058 - INFO - FASTA file has been successfully generated: /bios-store1/chenyc/scripts/SeekmiRNATools/test/miRNA_hairpin_sequences.fa
+2024-12-04 16:29:40,058 - INFO - Starting miRNA Peak Search Processing
+2024-12-04 16:31:07,783 - INFO - Caculate strand specificity
+2024-12-04 16:31:11,469 - INFO - Processing sequence file and update GFF file
+2024-12-04 16:31:11,471 - INFO - Read 268 long sequences from /bios-store1/chenyc/scripts/SeekmiRNATools/test/miRNA_hairpin_sequences.fa
+2024-12-04 16:31:11,474 - INFO - Warning: Both short sequences for siRNA_62 in file /bios-store1/chenyc/scripts/SeekmiRNATools/test/miRNA_mature_sequences.fa are empty or invalid, skipping processing. Context: MIR=siRNA_62, Peak1=None, Peak2=None
+2024-12-04 16:31:11,475 - INFO - Warning: Both short sequences for siRNA_71 in file /bios-store1/chenyc/scripts/SeekmiRNATools/test/miRNA_mature_sequences.fa are empty or invalid, skipping processing. Context: MIR=siRNA_71, Peak1=None, Peak2=None
+2024-12-04 16:31:11,482 - INFO - Warning: Both short sequences for siRNA_185 in file /bios-store1/chenyc/scripts/SeekmiRNATools/test/miRNA_mature_sequences.fa are empty or invalid, skipping processing. Context: MIR=siRNA_185, Peak1=None, Peak2=None
+2024-12-04 16:31:12,240 - INFO - Updated GFF file has been saved to /bios-store1/chenyc/scripts/SeekmiRNATools/test/updated.gff
+2024-12-04 16:31:12,241 - INFO - Caculate final precision for miRNA
+2024-12-04 16:31:18,534 - INFO - Save results to csv file
+2024-12-04 16:31:18,609 - INFO - FASTA file has been successfully generated: /bios-store1/chenyc/scripts/SeekmiRNATools/test/miRNA_mature_sequences.fa
+2024-12-04 16:31:18,610 - INFO - None
+2024-12-04 16:32:25,947 - INFO - None
+2024-12-04 16:32:25,947 - INFO - BAM file used: /home/chenyc/bioinfo/bios-store2/Cooperative_Project/Project_chensusu_240807N/R_0/merged.bam
+2024-12-04 16:32:25,947 - INFO - GFF file used: /home/chenyc/bioinfo/bios-store2/Cooperative_Project/Project_chensusu_240807N/res_loci_merge/converted.gff
+2024-12-04 16:32:26,019 - INFO - FASTA file has been successfully generated: /bios-store1/chenyc/scripts/SeekmiRNATools/test/miRNA_hairpin_sequences.fa
+2024-12-04 16:32:26,019 - INFO - Starting miRNA Peak Search Processing
+2024-12-04 16:33:54,847 - INFO - Caculate strand specificity
+2024-12-04 16:33:58,601 - INFO - Processing sequence file and update GFF file
+2024-12-04 16:33:58,602 - INFO - Read 268 long sequences from /bios-store1/chenyc/scripts/SeekmiRNATools/test/miRNA_hairpin_sequences.fa
+2024-12-04 16:33:58,606 - INFO - Warning: Both short sequences for siRNA_62 in file /bios-store1/chenyc/scripts/SeekmiRNATools/test/miRNA_mature_sequences.fa are empty or invalid, skipping processing. Context: MIR=siRNA_62, Peak1=None, Peak2=None
+2024-12-04 16:33:58,606 - INFO - Warning: Both short sequences for siRNA_71 in file /bios-store1/chenyc/scripts/SeekmiRNATools/test/miRNA_mature_sequences.fa are empty or invalid, skipping processing. Context: MIR=siRNA_71, Peak1=None, Peak2=None
+2024-12-04 16:33:58,613 - INFO - Warning: Both short sequences for siRNA_185 in file /bios-store1/chenyc/scripts/SeekmiRNATools/test/miRNA_mature_sequences.fa are empty or invalid, skipping processing. Context: MIR=siRNA_185, Peak1=None, Peak2=None
+2024-12-04 16:33:59,371 - INFO - Updated GFF file has been saved to /bios-store1/chenyc/scripts/SeekmiRNATools/test/updated.gff
+2024-12-04 16:33:59,371 - INFO - Caculate final precision for miRNA
+2024-12-04 16:34:05,592 - INFO - Save results to csv file
+2024-12-04 16:34:05,659 - INFO - FASTA file has been successfully generated: /bios-store1/chenyc/scripts/SeekmiRNATools/test/miRNA_mature_sequences.fa
+2024-12-04 16:34:05,660 - INFO - None
